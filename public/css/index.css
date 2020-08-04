@@ -1,0 +1,28 @@
+html, body {
+    /*background-color: #5ddfff;*/
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+.h1{
+    color: green!important;
+}
+
+.navbar{
+    background-color: #cce4ff !important;
+}
+
+.nav-link{
+    /*color: #5b4443!important;*/
+}
+
+.hiderButtons{
+    margin: auto;
+}
+
+.myClass{
+    color: green;
+}
