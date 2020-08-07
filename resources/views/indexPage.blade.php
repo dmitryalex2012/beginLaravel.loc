@@ -3,9 +3,9 @@
 
 @section('content')
 
-    <h1>Hello, world!</h1>
+{{--    <h1>Hello, world!</h1>--}}
 
-    <p class="myClass">My class</p>
+{{--    <p class="myClass">My class</p>--}}
 
     <div class="container">
 
