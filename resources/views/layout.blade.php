@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<div id="wrap">
+{{--<div class="content">--}}
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     {{--    <a class="navbar-brand" href="<?php echo action('IndexController@index'); ?>">Navbar</a>--}}
@@ -58,34 +58,34 @@
 
 
 
-    <div id="mainPart" >
+{{--    <div id="mainPart" >--}}
 
         @yield('content')
 
-    </div>
+{{--    </div>--}}
+
+
+{{--</div>--}}
 
 
 
-{{--    <footer class="footer">--}}
-{{--        Copyright Кристина Ветрова--}}
-{{--    </footer>--}}
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="containerLogo col-sm-7 col-12">
-                    <p class="siteDesigner">&copy; Сечин Дмитрий 2020</p>
-                </div>
-                <div class="containerRef col-sm-5 col-12">
-                    <a href="https://www.facebook.com/manufacture.design/" target="_blank">   <img src='{{ asset('images/facebook1.png') }}' alt=""/></a>
-                    <a href="https://www.instagram.com/textile_decor_kiev/?hl=uk" target="_blank"><img src='{{ asset('images/inst1.png') }}' alt=""/></a>
-                </div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="containerLogo col-sm-7 col-12">
+                <p class="siteDesigner">&copy; Сечин Дмитрий 2020</p>
+            </div>
+            <div class="containerRef col-sm-5 col-12">
+                <a href="https://www.facebook.com/manufacture.design/" target="_blank">   <img src='{{ asset('images/facebook1.png') }}' alt=""/></a>
+                <a href="https://www.instagram.com/textile_decor_kiev/?hl=uk" target="_blank"><img src='{{ asset('images/inst1.png') }}' alt=""/></a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
 
 
-</div>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -96,6 +96,20 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
 
 <script src="{{ asset('css/slick/slick.min.js') }}"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        let indexClass = '.indexImages';
+
+        $(indexClass).slick({
+            arrows: false,
+            dots: true
+        });
+    });
+
+</script>
 
 </body>
 </html>

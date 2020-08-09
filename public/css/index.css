@@ -1,11 +1,21 @@
-html, body {
+html{
+    height: 100%;
+}
+body {
     /*background-color: #5ddfff;*/
     color: #636b6f;
+    position: relative;
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
-    height: 100%;
+    min-height: 100%;
+    padding-bottom: 50px;
     margin: 0;
 }
+
+/*.content {*/
+    /*position: relative;*/
+    /*min-height: 100%;*/
+/*}*/
 
 .navbar{
     background-color: #cce4ff !important;
@@ -25,6 +35,11 @@ html, body {
     padding: 10px;
 }
 
+/*#mainPart {*/
+/*    !*position: relative;*!*/
+/*    min-height: 100%;*/
+/*}*/
+
 .footer{
     background-color: #adb5bd;
     position: absolute;
@@ -43,5 +58,15 @@ html, body {
 .containerRef{
     margin-top: 8px;
     text-align: center;
+    margin-bottom: 0;
 }
 
+.siteDesigner{
+    margin-bottom: 0;
+}
+
+img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}
